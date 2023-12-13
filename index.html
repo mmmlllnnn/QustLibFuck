@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>青科图书馆抢座</title>
+ 
+</head>
+<body>
+<script>
+function submitdown(){
+      alert("已经提交到后台");
+}
+</script>
+
+    <div class="main">
+        <div class="login">
+            <div class="account">
+                <form class="loginform" method="post" action="www.baidu.com" onsubmit=submitdown()>
+                    <div class="rlogo">TEST</div>
+									
+                    <div class="line"><input class="inputtxt" value="" name="passid" datatype="*" nullmsg="请填写验证密码" errormsg="格式不对" placeholder="请填写验证密码" type="text"></div>
+                    <div class="line"><input class="inputtxt" value="" name="sessid" datatype="*" nullmsg="请填写wechatSESS_ID" errormsg="格式不对" placeholder="请填写wechatSESS_ID (Cookie)" type="text"></div>
+					
+                    <div class="line"><input class="inputtxt" value="05:30:00" name="time" datatype="*" nullmsg="请填写抢座时间" errormsg="格式不对" placeholder="请填写抢座时间" type="text"></div>					
+	
+<h2>支持抢两个座位:</h2>	
+		<div >
+		<select name="cgid" id="selectelist" class="shortselect">
+		      <option value="">---请选择场馆--</option>   
+		      <option value="10287" >弘毅自习室(2楼)</option>
+			  <option value="10288">外文期刊阅览室(2楼)</option>
+			  <option value="10290" selected="selected">工科图书阅览室(2楼)</option>
+			  <option value="10291">文理图书阅览室(3楼)</option>
+			  <option value="10292">科技期刊阅览室(4楼)</option>
+			  <option value="11324">明德自修室室(4楼)</option>
+		 </select>			
+		<input class="seatid" value="9" name="seatid" placeholder="座号" type="text">号座
+		</div>
+		<div >
+		<select name="cgid" id="selectelist" class="shortselect">
+		      <option value="">---请选择场馆--</option>   
+		      <option value="10287" >弘毅自习室(2楼)</option>
+			  <option value="10288">外文期刊阅览室(2楼)</option>
+			  <option value="10290">工科图书阅览室(2楼)</option>
+			  <option value="10291">文理图书阅览室(3楼)</option>
+			  <option value="10292" selected="selected">科技期刊阅览室(4楼)</option>
+			  <option value="11324">明德自修室室(4楼)</option>
+		 </select>			
+		<input class="seatid" value="8" name="seatid" placeholder="座号" type="text">号座
+		</div>				
+					
+					
+
+                    <div class="login_btn"><input id="login-button" value="提交抢座任务" type="submit"></div>
+                </form>			
+				
+			</div>
+		</div>
+	</div>
+	
+	
+ 
+</body>
+<style>
+#selectelist{
+		margin-bottom: 10px;
+		border:1px solid #c9c9c9;
+		background-color:#fff;
+		color:#666;
+		width: auto;
+		height:30px;
+		padding:4px 6px;
+		font-size:14px;
+		border-radius:4px;
+		cursor:pointer;
+		outline:none;
+	}
+.main .login .seatid{
+		border:1px solid #c9c9c9;
+		background-color:#fff;
+		color:#666;
+		width: 40px;
+		height:20px;
+		padding:4px 6px;
+		font-size:14px;
+		border-radius:4px;
+} 
+</style>
+ <style>
+body{
+	background-color:#444;font-family:华文黑体,"Microsoft YaHei",微软雅黑,STHei,"Helvetica Neue",Helvetica,Arial,sans-serif}input{-webkit-appearance:none}
+	.main .login{background-color:#fff;border-radius:4px;height:590px;left:50%;margin-left:-220px;margin-top:-180px;padding:35px 40px 50px;position:absolute;top:50%;width:360px}
+	.main .login .rlogo{text-align:center;font-size:26px;color:#444;cursor:pointer;height:40px;margin-bottom:40px;overflow:hidden}
+	.main .login .line{padding:0px 0;height:42px;margin-bottom:10px;line-height:42px;position:relative}
+	.main .login .line span{width:70px;float:left;color:#757584}
+	.main .login .line .inputtxt{background:0 0;float:left;width:338px;height:30px;line-height:30px;border:#d1d1d1 1px solid;padding:5px 10px;position:relative;z-index:1;box-shadow:0 3px 5px -4px rgba(0,0,0,.4) inset,-1px 0 3px -2px rgba(0,0,0,.1) inset;border-radius:8px}
+	.main .login .line .inputtxt:focus{border:#00ff00 1px solid;box-shadow:0 0 5px #eee}
+	.login_btn input{width:100%;height:44px;background:#20a53a;background:linear-gradient(#20a53a,#189d32);box-shadow:inset 0 1px 2px #30ad42;color:#fff;text-shadow:#00851a 0 -1px 0;border:1px solid #20a53a;text-align:center;font-size:16px;color:#fff;border-radius:3px;cursor:pointer}
+	.login_btn input:hover{background:#10952a;background:linear-gradient(#10952a,#088d22);border:1px solid #10952a}
+
+@media screen and (max-width:640px){body{background-color:#eee}.main .login .rlogo{background-color:rgba(0,0,0,.8);color:#fff;font-size:20px;height:2.8em;line-height:2.8em;margin:0 -3.3% 25px -3.3%}
+
+	.main .login{background-color:#eee;border-radius:0;height:330px;left:0;margin-left:0;margin-top:0;padding:0 3%;position:absolute;top:0;width:94%}
+	.main .login .line .inputtxt{background-color:#fff;border:1px solid #d1d1d1;width:93.6%;padding:5px 3%;font-size:1.2em}
+
+
+	body{line-height:1.4;color:#333;font-family:"微软雅黑",Arial,Helvetica,sans-serif;font-size:12px}
+	@media screen and (max-width:640px){.scanCode{display:none}.account{display:block!important}.bg_img{display:none}}
+	.main .login .rlogo{margin-top:20px;margin-bottom:25px;padding:0 25px}
+
+</style>  
+
+
+</html>

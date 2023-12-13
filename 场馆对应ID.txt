@@ -1,0 +1,11 @@
+10287 弘毅自习室
+10288 外文期刊阅览室
+10290 工科图书阅览室
+10291 文理图书阅览室
+10292 科技期刊阅览室
+11324 明德自修室
+
+
+获取签到id的get: http://wechat.v2.traceint.com/index.php/usertask/index.html
+每日签到积分post：http://wechat.v2.traceint.com/index.php/usertask/ajaxdone.html
+		携带id=''
